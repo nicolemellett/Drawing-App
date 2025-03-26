@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+  <script src="sprayCanTool.js"></script>
+  <script src="toolbox.js"></script>
+  <script src="colourPalette.js"></script>
+  <script src="helperFunctions.js"></script>
+  <script src="paintTool.js"></script>
+  <script src="lineToTool.js"></script>
+  <script src="mirrorDrawTool.js"></script>
+
+  <!--extra tools added -->
+  <script src="rectangleTool.js"></script>
+  <script src="eraserTool.js"></script>
+  <script src="floodTool.js"></script>
+  <script src="circleTool.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header">My Drawing App
+
+      <button id="clearButton">Clear</button>
+      <button id="saveImageButton">Save Image</button>
+      &nbsp; 
+      &nbsp;
+      <label for="sizeSlider" style="font-size: 20px;">size: </label>
+      <input type="range" id="sizeSlider" min="1" max="30" value="1">
+      <span id="sizeValue" style="font-size: 20px;">1</span>
+    </div>
+    <div class="box" id="sidebar"></div>
+    <div id="content"></div>
+
+    <div class="box colourPalette"></div>
+    <div class="box options"></div>
+  </div>
+</body>
+
+</html>
